@@ -25,14 +25,11 @@ class PhraseRepository {
         Phrase("Riscos devem ser corridos, porque o maior perigo é não arriscar nada!", sunny)
     )
 
-    // Obtém frase aleatória de acordo com o filtro
     fun getPhrase(value: Int): String {
         val filteredPhrases = listPhrases.filter { (it.category == value || value == all) }
 
-        // Número aleatório de 0 ao (tamanho da lista - 1) retornada do filtro
         val randomIndex = Random.nextInt(filteredPhrases.size)
 
-        // Retorna string
         return filteredPhrases[randomIndex].description
     }
 
