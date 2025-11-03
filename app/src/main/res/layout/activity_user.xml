@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple"
-    tools:context=".UserActivity">
+    tools:context=".ui.UserActivity">
 
     <TextView
         android:id="@+id/textview_begin"
@@ -19,6 +19,7 @@
         android:textSize="31dp" />
 
     <EditText
+        android:id="@+id/edit_text_id"
         android:layout_centerInParent="true"
         android:layout_margin="32dp"
         android:hint="Qual seu nome?"
