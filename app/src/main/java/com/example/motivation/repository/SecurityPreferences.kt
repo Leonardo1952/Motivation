@@ -1,4 +1,4 @@
-package com.example.motivation.helper
+package com.example.motivation.repository
 
 import android.content.Context
 

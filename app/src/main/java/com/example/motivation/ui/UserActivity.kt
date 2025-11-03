@@ -6,10 +6,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.motivation.MotivationConstants
+import com.example.motivation.helper.MotivationConstants
 import com.example.motivation.R
 import com.example.motivation.databinding.ActivityUserBinding
-import com.example.motivation.helper.SecurityPreferences
+import com.example.motivation.repository.SecurityPreferences
 import android.widget.Toast
 import android.content.Intent
 
@@ -35,6 +35,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         setListeners()
+        verifyUserName()
     }
 
     override fun onClick(v: View){
@@ -43,6 +44,15 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    private fun verifyUserName(){
+        val name = securityPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        if(!name.isEmpty()){
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+    }
+
+
     private fun handleSave(){
         val name = binding.editTextId.text.toString()
 
@@ -50,11 +60,9 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
             Toast.makeText(this, "Informe seu nome", Toast.LENGTH_SHORT).show()
         } else {
             securityPreferences.storeString(MotivationConstants.KEY.PERSON_NAME, name)
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
-
     }
 
     private fun setListeners(){

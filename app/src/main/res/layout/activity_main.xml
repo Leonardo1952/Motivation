@@ -19,7 +19,7 @@
     <ImageView
         android:id="@+id/image_all"
         android:src="@drawable/ic_all"
-        app:tint="@color/white"
+        app:tint="@color/black"
         android:layout_marginStart="32dp"
         android:layout_alignTop="@id/view_phrases_menu"
         android:layout_alignBottom="@id/view_phrases_menu"
@@ -30,7 +30,7 @@
     <ImageView
         android:id="@+id/image_happy"
         android:src="@drawable/ic_happy"
-        app:tint="@color/white"
+        app:tint="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
         android:layout_alignTop="@id/view_phrases_menu"
@@ -43,7 +43,7 @@
     <ImageView
         android:id="@+id/image_sunny"
         android:src="@drawable/ic_sunny"
-        app:tint="@color/white"
+        app:tint="@color/black"
         android:layout_marginEnd="32dp"
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@id/view_phrases_menu"
