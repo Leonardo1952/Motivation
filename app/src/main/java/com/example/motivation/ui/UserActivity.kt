@@ -52,6 +52,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
             securityPreferences.storeString(MotivationConstants.KEY.PERSON_NAME, name)
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
     }
