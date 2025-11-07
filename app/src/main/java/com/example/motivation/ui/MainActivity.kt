@@ -13,6 +13,8 @@ import com.example.motivation.databinding.ActivityMainBinding
 import PhraseRepository
 import androidx.core.content.ContextCompat
 
+import java.util.Locale
+
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
@@ -76,7 +78,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun refreshPhrase() {
-        binding.textviewPhase.text = phraseRepository.getPhrase(filter)
+        binding.textviewPhase.text = phraseRepository.getPhrase(filter, Locale.getDefault().language )
 
     }
 
