@@ -1,101 +1,99 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    android:layout_height="match_parent">
 
     <View
         android:id="@+id/view_phrases_menu"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="64dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:background="@color/purple"
-       />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/image_all"
-        android:src="@drawable/ic_all"
-        app:tint="@color/black"
-        android:layout_marginStart="32dp"
-        android:layout_alignTop="@id/view_phrases_menu"
-        android:layout_alignBottom="@id/view_phrases_menu"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        />
+        android:layout_marginStart="32dp"
+        android:src="@drawable/ic_all"
+        app:tint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_phrases_menu"
+        app:layout_constraintBottom_toBottomOf="@id/view_phrases_menu" />
 
     <ImageView
         android:id="@+id/image_happy"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:src="@drawable/ic_happy"
         app:tint="@color/black"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="32dp"
-        android:layout_alignTop="@id/view_phrases_menu"
-        android:layout_alignBottom="@id/view_phrases_menu"
-        android:layout_width="45dp"
         android:elevation="5dp"
-        android:layout_height="45dp"
-        />
+        app:layout_constraintTop_toTopOf="@id/view_phrases_menu"
+        app:layout_constraintBottom_toBottomOf="@id/view_phrases_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
         android:id="@+id/image_sunny"
-        android:src="@drawable/ic_sunny"
-        app:tint="@color/black"
-        android:layout_marginEnd="32dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@id/view_phrases_menu"
-        android:layout_alignBottom="@id/view_phrases_menu"
         android:layout_width="45dp"
         android:layout_height="45dp"
-        />
-    
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/ic_sunny"
+        app:tint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_phrases_menu"
+        app:layout_constraintBottom_toBottomOf="@id/view_phrases_menu" />
+
     <TextView
         android:id="@+id/textview_name"
-        android:layout_below="@id/view_phrases_menu"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:textSize="20sp"
-        android:text="Olá, kotlin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:text="Olá, kotlin"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/view_phrases_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textview_phase"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:layout_centerInParent="true"
-        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:text="Olá, kotlinnnnnnnnnnnnn"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:text="Olá, kotlinnnnnnnnnnnnn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textview_name"
+        app:layout_constraintBottom_toTopOf="@+id/view_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
 
     <View
-        android:layout_below="@id/textview_phase"
+        android:id="@+id/view_divider"
         android:layout_width="128dp"
-        android:layout_centerHorizontal="true"
-        android:background="@color/purple"
-        android:layout_marginTop="16dp"
-        android:elevation="5dp"
         android:layout_height="4dp"
-        />
+        android:layout_marginTop="16dp"
+        android:background="@color/purple"
+        android:elevation="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textview_phase"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button_new_phrase"
         android:layout_width="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_height="wrap_content"
         android:text="Nova frase"
         android:backgroundTint="@color/purple"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
