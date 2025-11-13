@@ -1,0 +1,39 @@
+# Motivation
+
+Motivation é um projeto criado em Kotlin com o intuito de demostração de como funciona o parte do processo de engenharia reversa e ofuscação de código para o artigo que pode ser encontrado em [LINK do artigo](https://medium.com/p/1d643322b821).
+
+## Demonstração
+
+[//]: # (Adicione aqui um vídeo ou GIF demonstrando o aplicativo)
+<p align="center">
+  <!-- Substitua o link abaixo pelo seu vídeo/gif -->
+  <img src="link_para_seu_video.gif" alt="Demonstração do App Motivation" width="300"/>
+</p>
+
+## Sobre o Projeto
+
+O Motivation é um aplicativo simples para Android que exibe frases motivacionais ao usuário. Ele permite que o usuário insira seu nome e, em seguida, veja frases que podem ser filtradas por categorias (Todas, Feliz, Ensolarado).
+
+### Funcionalidades
+
+*   Tela de boas-vindas para o usuário inserir o nome.
+*   Exibição de frases motivacionais.
+*   Filtro de frases por categoria.
+*   Suporte a múltiplos idiomas (Português, Inglês e Francês) com base na localidade do dispositivo.
+
+## Tecnologias Utilizadas
+
+*   [Kotlin](https://kotlinlang.org/)
+*   [Android Jetpack](https://developer.android.com/jetpack)
+    *   [View Binding](https://developer.android.com/topic/libraries/view-binding)
+    *   [AppCompat](https://developer.android.com/jetpack/androidx/releases/appcompat)
+    *   [Core KTX](https://developer.android.com/jetpack/androidx/releases/core)
+
+## Como Compilar
+
+1.  Clone o repositório:
+    ```sh
+    git clone https://github.com/seu-usuario/motivation.git
+    ```
+2.  Abra o projeto no Android Studio.
+3.  Aguarde a sincronização do Gradle e compile o projeto.
