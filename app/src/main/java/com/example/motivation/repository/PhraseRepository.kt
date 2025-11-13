@@ -1,3 +1,5 @@
+package com.example.motivation.repository
+
 import com.example.motivation.helper.MotivationConstants
 import kotlin.random.Random
 
@@ -101,12 +103,16 @@ class PhraseRepository {
 
     fun getPhrase(value: Int, language: String): String {
 
-        var langFilter = language.lowercase()
-        if (language !in listOf(langEn, langPt, langFr)){
-            langFilter = MotivationConstants.LANGUAGE.PORTUGUESE
+        val langFilter = language.lowercase()
+        if (langFilter !in listOf(langEn, langPt, langFr)){
+            langFilter == langPt
         }
 
-        val filteredPhrases = listPhrases.filter { (it.category == value || value == all) && it.language == language}
+        val filteredPhrases = listPhrases.filter { (it.category == value || value == all) && it.language == langFilter}
+        
+        if (filteredPhrases.isEmpty()) {
+            return "Nenhuma frase encontrada para a categoria e idioma selecionados."
+        }
 
         val randomIndex = Random.nextInt(filteredPhrases.size)
 

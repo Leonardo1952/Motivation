@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.motivation.helper.MotivationConstants
 import com.example.motivation.R
 import com.example.motivation.databinding.ActivityMainBinding
-import PhraseRepository
+import com.example.motivation.repository.PhraseRepository
 import androidx.core.content.ContextCompat
 
 import java.util.Locale
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun getUserName() {
         val name = securityPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
-        binding.textviewName.text = name
+        binding.textviewName.text = "Olá, $name!"
     }
 
     private fun setListeners() {
