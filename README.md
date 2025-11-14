@@ -6,7 +6,11 @@ Motivation é um projeto criado em Kotlin com o intuito de demostração de como
 
 [//]: # (Adicione aqui um vídeo ou GIF demonstrando o aplicativo)
 <p align="center">
-  <!-- Substitua o link abaixo pelo seu vídeo/gif -->
+
+https://github.com/user-attachments/assets/c9fbb578-109b-4b97-9d0f-f5ffef755489
+
+
+
   <img src="link_para_seu_video.gif" alt="Demonstração do App Motivation" width="300"/>
 </p>
 
@@ -33,7 +37,7 @@ O Motivation é um aplicativo simples para Android que exibe frases motivacionai
 
 1.  Clone o repositório:
     ```sh
-    git clone https://github.com/seu-usuario/motivation.git
+    git clone https://github.com/Leonardo1952/Motivation.git
     ```
 2.  Abra o projeto no Android Studio.
 3.  Aguarde a sincronização do Gradle e compile o projeto.
