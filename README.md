@@ -4,15 +4,7 @@ Motivation é um projeto criado em Kotlin com o intuito de demostração de como
 
 ## Demonstração
 
-[//]: # (Adicione aqui um vídeo ou GIF demonstrando o aplicativo)
-<p align="center">
-
 https://github.com/user-attachments/assets/c9fbb578-109b-4b97-9d0f-f5ffef755489
-
-
-
-  <img src="link_para_seu_video.gif" alt="Demonstração do App Motivation" width="300"/>
-</p>
 
 ## Sobre o Projeto
 
