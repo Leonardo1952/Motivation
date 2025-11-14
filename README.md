@@ -1,6 +1,6 @@
 # Motivation
 
-Motivation é um projeto criado em Kotlin com o intuito de demostração de como funciona o parte do processo de engenharia reversa e ofuscação de código para o artigo que pode ser encontrado em [LINK do artigo](https://medium.com/p/1d643322b821).
+Motivation é um projeto criado em Kotlin com o intuito de demostração de como funciona o parte do processo de engenharia reversa e ofuscação de código para o artigo que pode ser encontrado em https://medium.com/@lo88980/ofusca%C3%A7%C3%A3o-de-c%C3%B3digo-nativo-e-sua-import%C3%A2ncia-b521466bf.
 
 ## Demonstração
 
