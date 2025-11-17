@@ -20,7 +20,7 @@ class SecurityPreferencesTest {
         mSecurityPreferences = SecurityPreferences(context)
 
         // Define key and value
-        val key = MotivationConstants.KEY.USER_NAME
+        val key = MotivationConstants.KEY.PERSON_NAME
         val value = "Test User"
 
         // Store the value

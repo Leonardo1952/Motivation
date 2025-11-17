@@ -1,3 +1,5 @@
+package com.example.motivation.repository
+
 import com.example.motivation.helper.MotivationConstants
 import kotlin.random.Random
 

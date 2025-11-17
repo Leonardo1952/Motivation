@@ -23,7 +23,7 @@ class SecurityPreferencesTest {
 
     @Test
     fun testStoreAndGetString() {
-        val key = MotivationConstants.KEY.USER_NAME
+        val key = MotivationConstants.KEY.PERSON_NAME
         val value = "Test User"
 
         // Testa o armazenamento do valor
@@ -36,7 +36,7 @@ class SecurityPreferencesTest {
 
     @Test
     fun testGetString_whenValueIsEmpty() {
-        val key = MotivationConstants.KEY.USER_NAME
+        val key = MotivationConstants.KEY.PERSON_NAME
 
         // Garante que o valor não existe
         val prefs = context.getSharedPreferences("Motivation", Context.MODE_PRIVATE)

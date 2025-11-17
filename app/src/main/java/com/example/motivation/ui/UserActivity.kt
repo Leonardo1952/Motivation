@@ -54,7 +54,7 @@ class UserActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun handleSave(){
-        val name = binding.editTextId.text.toString()
+        val name = binding.editPersonName.text.toString()
 
         if(name.isEmpty()){
             Toast.makeText(this, "Informe seu nome", Toast.LENGTH_SHORT).show()
